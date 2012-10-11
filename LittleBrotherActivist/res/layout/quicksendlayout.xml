@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent" 
+    android:layout_height="fill_parent"
+    android:background="@drawable/bkg" >
+	<LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:orientation="vertical" >
+    
+		<TextView
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:textSize="40px"
+	        android:text="Report the abuse" />
+		
+		<TextView android:layout_width="fill_parent"
+			android:layout_height="2dip"
+			android:background="#FFFFFF" />
+		
+		
+		<ImageButton
+	        android:id="@+id/bigSend"
+	        android:layout_gravity="center_vertical|center_horizontal"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:src="@drawable/peace_symbol" />
+	
+		<TextView
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:text="First name:" />
+		
+		<EditText
+		    android:id="@+id/qspolicefirstname"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:ems="10" />
+	
+		<TextView
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:text="Last name:" />
+		
+		<EditText
+		    android:id="@+id/qspolicelastname"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:ems="10" />
+	
+		<TextView
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:text="ID(if you could see it)" />
+		
+		<EditText
+		    android:id="@+id/qspoliceid"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:ems="10" />
+	
+		<TextView
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:text="Photo:" />
+		
+		 <Button
+	        android:id="@+id/qsuploadphoto"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:onClick="onqsPhotoUploadPressed"
+	        android:textSize="30px"
+	        android:text="Take photo" />
+	
+		<TextView
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:text="Note(Was he involved in other similar incidents?)" />
+		
+		<EditText
+		    android:id="@+id/qspolicenote"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:inputType="textMultiLine"
+	        android:ems="10" />
+	
+		<TextView
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:text="Case:" />
+		
+		<EditText
+		    android:id="@+id/qspolicecasenote"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:inputType="textMultiLine"
+	        android:ems="10" />
+	
+		<TextView
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:text="Date(When did happened):" />
+		
+		<EditText
+		    android:id="@+id/qspolicedate"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:ems="10" />
+	
+		<TextView
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:text="Type of the abuse:" />
+		
+		
+		<Spinner android:id="@+id/qspolicetype"
+	    	android:layout_width="match_parent"
+	    	android:layout_height="wrap_content"/>
+		
+	
+		<TextView
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:text="Abuse details" />
+		
+		<EditText
+		    android:id="@+id/qspoliceabusedetails"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:inputType="textMultiLine"
+	        android:ems="10" />
+	
+		<TextView
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:text="Results:" />
+		
+		<Spinner android:id="@+id/qspoliceresults"
+	    	android:layout_width="match_parent"
+	    	android:layout_height="wrap_content"/>
+	
+		<TextView
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:text="District:" />
+		
+		<EditText
+		    android:id="@+id/qspolicedistrict"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:ems="10" />
+	</LinearLayout>
+</ScrollView>
